@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'newsletter_core/index'
+
+  get 'newsletter_core/letters'
+
+  get 'newsletter_core/shop'
+
+  get 'newsletter_core/discussion'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

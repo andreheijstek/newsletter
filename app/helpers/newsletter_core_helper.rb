@@ -1,0 +1,2 @@
+module NewsletterCoreHelper
+end
