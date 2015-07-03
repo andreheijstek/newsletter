@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  welcome: MyText
+  date: 2015-07-03
+  time1: 2015-07-03 08:41:09
+  time2: 2015-07-03 08:41:09
+  announcements: MyText
+  liturgy: MyText
+
+two:
+  welcome: MyText
+  date: 2015-07-03
+  time1: 2015-07-03 08:41:09
+  time2: 2015-07-03 08:41:09
+  announcements: MyText
+  liturgy: MyText

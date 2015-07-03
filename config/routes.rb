@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :letters
   get 'newsletter_core/index'
-  get 'newsletter_core/letters'
   get 'newsletter_core/shop'
   get 'newsletter_core/discussion'
 
