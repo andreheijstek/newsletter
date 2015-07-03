@@ -1,17 +1,15 @@
 Rails.application.routes.draw do
+
   get 'newsletter_core/index'
-
   get 'newsletter_core/letters'
-
   get 'newsletter_core/shop'
-
   get 'newsletter_core/discussion'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'newsletter_core#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
