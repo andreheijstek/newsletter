@@ -1,5 +1,6 @@
 class LettersController < ApplicationController
   before_action :set_letter, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_editor!, :except => [:index, :show]
 
   # GET /letters
   # GET /letters.json

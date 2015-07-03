@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :editors
   resources :letters
   get 'newsletter_core/index'
   get 'newsletter_core/shop'
