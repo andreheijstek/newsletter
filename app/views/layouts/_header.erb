@@ -1,5 +1,5 @@
-<header>
-  <nav id=""sign_in">
+<header id="page_header", role="banner">
+  <div id="sign_in">
   <% if editor_signed_in? %>
       Signed in as <%= current_editor.email %>:
       <%= link_to "Sign out", destroy_editor_session_path, :method => :delete %>
@@ -7,7 +7,7 @@
       <%= link_to "Sign up", new_editor_registration_path %> or
       <%= link_to "Sign in", new_editor_session_path %>
   <% end %>
-  </nav>
+  </div>
 
   <h1>Zondagsbrief via de app</h1>
   <h2>bespaar op drukkosten en bied meer mogelijkheden</h2>
