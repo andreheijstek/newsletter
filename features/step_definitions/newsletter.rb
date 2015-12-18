@@ -28,6 +28,9 @@ Then(/^I want to see a confirmation message$/) do
   expect(page).to have_content('Letter was successfully created.')
 end
 
-Then(/^I want to see the same data in the JSON page$/) do
+Then(/^I want to see the same data in the JSON page: "([^"]*)", (\d+), "([^"]*)", (\d+), (\d+), (\d+), (\d+), (\d+), "([^"]*)", "([^"]*)"$/) do | welcome, year, month, day, hour1, minute1, hour2, minute2, announcement, liturgy |
   visit "#{@url}/letters.json"
+  # Op deze pagina, vind de laatste entry en controleer dat alle juiste waarden erin staan.
+  # TODO Ik ga dit nu niet verder uitwerken, want de JSON API moet toch helemaal anders gemaakt worden,
+  # zie taak in Wunderlist
 end
