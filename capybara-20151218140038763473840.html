@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+  <meta charset="utf-8" />
+  <title>Zondagsbrief</title>
+  <link data-turbolinks-track="true" href="/assets/application.self-489c3e007974fbfaa496637ac1204061ef9d39f4dd29f1f5d1eae0ed61b80625.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/layout.self-4fb7ce786d16bec3f7abb5bea23d8e177aabe5cf45ae04918b1c0fb75168dc31.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/navigation.self-7b15e3826713d329d79cc9ba6e38b45fa9235800596061f555d8bc351b51a2c3.css?body=1" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="/assets/modernizr-2.8.3.self-50d91a59409b0763cb78a29e8971bb40b280f67693a658137dfc846a0bcd3ff3.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/letters.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/newsletter_core.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="ZmiRHaYz0RtCLGPgXdvX69btvnT2Q77+dCOqe6nOikGGVqbo5vMywPLd7ZRCQQ7iU31iQiynBH1+yKKwwo3vyQ==" name="csrf-token" />
+
+  </head><body><p class="notice"></p>
+
+  <p class="alert"></p>
+
+
+<div id="container">
+
+  <header role="banner" ,="" id="page_header">
+  <div id="sign_in">
+      Signed in as test.user@test.nl:
+      <a href="/editors/sign_out" data-method="delete" rel="nofollow">Sign out</a>
+  </div>
+
+  <h1>Zondagsbrief via de app</h1>
+  <h2>bespaar op drukkosten en bied meer mogelijkheden</h2>
+</header>
+
+  <nav role="navigation" ,="" id="main_nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/letters">Zondagsbrieven</a></li>
+    <li><a href="/newsletter_core/discussion">Discussie</a></li>
+    <li><a href="/newsletter_core/shop">Shop</a></li>
+  </ul>
+</nav>
+
+  <h1>New Letter</h1>
+
+<form method="post" accept-charset="UTF-8" action="/letters" id="new_letter" class="new_letter"><input type="hidden" value="✓" name="utf8" /><input type="hidden" value="qCOVoSY/HdIlw5z/rnr9vtMRAo32tu5Hich8bFaUtgZIHaJUZv/+CZUyEoux4CS3VoHeuyxSVMSDI3SnPdfTjg==" name="authenticity_token" />
+
+  <div class="field">
+    <label for="letter_welcome">Welcome</label><br />
+    <textarea id="letter_welcome" name="letter[welcome]"></textarea>
+  </div>
+  <div class="field">
+    <label for="letter_date">Date</label><br />
+    <select name="letter[date(1i)]" id="letter_date_1i">
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option selected="selected" value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+</select>
+<select name="letter[date(2i)]" id="letter_date_2i">
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option selected="selected" value="12">December</option>
+</select>
+<select name="letter[date(3i)]" id="letter_date_3i">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option selected="selected" value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+
+  </div>
+  <div class="field">
+    <label for="letter_time1">Time1</label><br />
+    <input type="hidden" value="2015" name="letter[time1(1i)]" id="letter_time1_1i" />
+<input type="hidden" value="12" name="letter[time1(2i)]" id="letter_time1_2i" />
+<input type="hidden" value="18" name="letter[time1(3i)]" id="letter_time1_3i" />
+<select name="letter[time1(4i)]" id="letter_time1_4i">
+<option value="00">00</option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option selected="selected" value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+</select>
+ : <select name="letter[time1(5i)]" id="letter_time1_5i">
+<option selected="selected" value="00">00</option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+<option value="46">46</option>
+<option value="47">47</option>
+<option value="48">48</option>
+<option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+<option value="53">53</option>
+<option value="54">54</option>
+<option value="55">55</option>
+<option value="56">56</option>
+<option value="57">57</option>
+<option value="58">58</option>
+<option value="59">59</option>
+</select>
+
+  </div>
+  <div class="field">
+    <label for="letter_time2">Time2</label><br />
+    <input type="hidden" value="2015" name="letter[time2(1i)]" id="letter_time2_1i" />
+<input type="hidden" value="12" name="letter[time2(2i)]" id="letter_time2_2i" />
+<input type="hidden" value="18" name="letter[time2(3i)]" id="letter_time2_3i" />
+<select name="letter[time2(4i)]" id="letter_time2_4i">
+<option value="00">00</option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option selected="selected" value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+</select>
+ : <select name="letter[time2(5i)]" id="letter_time2_5i">
+<option selected="selected" value="00">00</option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+<option value="46">46</option>
+<option value="47">47</option>
+<option value="48">48</option>
+<option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+<option value="53">53</option>
+<option value="54">54</option>
+<option value="55">55</option>
+<option value="56">56</option>
+<option value="57">57</option>
+<option value="58">58</option>
+<option value="59">59</option>
+</select>
+
+  </div>
+  <div class="field">
+    <label for="letter_announcements">Announcements</label><br />
+    <textarea id="letter_announcements" name="letter[announcements]"></textarea>
+  </div>
+  <div class="field">
+    <label for="letter_liturgy">Liturgy</label><br />
+    <textarea id="letter_liturgy" name="letter[liturgy]"></textarea>
+  </div>
+  <div class="actions">
+    <input type="submit" value="Create Letter" name="commit" />
+  </div>
+</form>
+
+<a href="/letters">Back</a>
+
+
+  <footer>
+  © 2015 Improvement Focus BV
+</footer>
+</div>
+
+
+</body></html>
